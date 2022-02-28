@@ -1,0 +1,35 @@
+.dropdown {
+  align-items: center;
+  &__title,
+  &__item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 27px;
+  }
+
+  &__quick-add {
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border: 1px solid #888;
+    color: #fff;
+  }
+
+  &__content {
+    padding-left: 25px;
+  }
+
+  &__expand-icon {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 25px;
+    height: 27px;
+
+    &--open {
+      transform-origin: 10px;
+      transform: rotate(90deg);
+    }
+  }
+}

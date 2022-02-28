@@ -6,6 +6,7 @@ import avatarMockup2 from 'assets/images/avatar-mockup-2.png';
 import avatarMockup3 from 'assets/images/avatar-mockup-3.png';
 import Button from './UI/Button/Button';
 import 'styles/Frame.scss';
+import WriteForm from './WriteForm';
 
 interface Props {
   handleFrameClick: () => void;
@@ -54,7 +55,9 @@ const Frame = ({ handleFrameClick }: Props) => {
           </Button>
         </div>
       </div>
-      <div className="frame__content"></div>
+      <div className="frame__content">
+        <WriteForm />
+      </div>
     </main>
   );
 };

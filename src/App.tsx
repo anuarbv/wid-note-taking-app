@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.scss';
+import './styles/App.scss';
 import Sidebar from './components/Sidebar';
 import Frame from 'components/Frame';
 

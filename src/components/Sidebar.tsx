@@ -10,6 +10,7 @@ import {
 import Dropdown from './UI/Dropdown/Dropdown';
 import Button from './UI/Button/Button';
 import 'styles/Sidebar.scss';
+import NoteItem from './NoteItem';
 
 interface Props {
   isVisible: boolean;
@@ -62,7 +63,7 @@ const Sidebar = ({ isVisible, setIsVisible }: Props) => {
       <div className="sidebar__main">
         <div className="sidebar__list">
           <Dropdown title="Quick Notes">
-            <Dropdown title="Today" />
+            <NoteItem />
           </Dropdown>
         </div>
       </div>
